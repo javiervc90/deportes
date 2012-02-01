@@ -1,8 +1,7 @@
-<h1>Listing alumnos</h1>
-
 <table>
   <tr>
     <th>Nombre</th>
+    <th>Numero de cuenta</th>
     <th>Facultad</th>
     <th>Semestre</th>
     <th>Grupo</th>
@@ -15,11 +14,12 @@
 <% @alumnos.each do |alumno| %>
   <tr>
     <td><%= alumno.nombre %></td>
+    <td><%= alumno.carrera%></td>
     <td><%= alumno.facultad %></td>
     <td><%= alumno.semestre %></td>
     <td><%= alumno.grupo %></td>
     <td><%= alumno.carrera %></td>
-
+     <td><%= link_to 'Show', alumno %></td>
   </tr>
 <% end %>
 </table>
