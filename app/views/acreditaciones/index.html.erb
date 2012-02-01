@@ -1,0 +1,29 @@
+<h1>Listing acreditaciones</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Administrador</th>
+    <th>Fecha de Inico</th>
+    <th>Fecha de termino</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @acreditaciones.each do |acreditacione| %>
+  <tr>
+    <td><%= acreditacione.nombre %></td>
+    <td><%= acreditacione.administrador %></td>
+    <td><%= acreditacione.fecha_inicio%> </td>
+    <td><%= acreditacione.fecha_termino%> </td>
+    <td><%= link_to 'Show', acreditacione %></td>
+    <td><%= link_to 'Edit', edit_acreditacione_path(acreditacione) %></td>
+    <td><%= link_to 'Destroy', acreditacione, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Acreditacione', new_acreditacione_path %>

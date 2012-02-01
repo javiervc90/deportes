@@ -1,0 +1,26 @@
+<h1>Listing alumnos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Facultad</th>
+    <th>Semestre</th>
+    <th>Grupo</th>
+    <th>Carrera</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alumnos.each do |alumno| %>
+  <tr>
+    <td><%= alumno.nombre %></td>
+    <td><%= alumno.facultad %></td>
+    <td><%= alumno.semestre %></td>
+    <td><%= alumno.grupo %></td>
+    <td><%= alumno.carrera %></td>
+
+  </tr>
+<% end %>
+</table>
+

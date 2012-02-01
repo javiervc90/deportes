@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  asistencias: 1
+  creditos: 1
+  p1: false
+  p2: false
+  p3: false
+  p4: false
+
+two:
+  asistencias: 1
+  creditos: 1
+  p1: false
+  p2: false
+  p3: false
+  p4: false

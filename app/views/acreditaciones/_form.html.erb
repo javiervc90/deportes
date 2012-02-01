@@ -1,0 +1,33 @@
+<%= form_for(@acreditacione) do |f| %>
+  <% if @acreditacione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@acreditacione.errors.count, "error") %> prohibited this acreditacione from being saved:</h2>
+
+      <ul>
+      <% @acreditacione.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :administrador %><br />
+    <%= f.text_field :administrador %>
+  </div>
+    <div class="field">
+    <%= f.label :Fecha_de_inicio %><br />
+    <%= f.text_field :fecha_inicio %>
+  </div>
+    <div class="field">
+    <%= f.label :Fecha_de_termino %><br />
+    <%= f.text_field :fecha_termino %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

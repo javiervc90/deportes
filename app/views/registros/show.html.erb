@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Asistencias:</b>
+  <%= @registro.asistencias %>
+</p>
+
+<p>
+  <b>Creditos:</b>
+  <%= @registro.creditos %>
+</p>
+
+<p>
+  <b>P1:</b>
+  <%= @registro.p1 %>
+</p>
+
+<p>
+  <b>P2:</b>
+  <%= @registro.p2 %>
+</p>
+
+<p>
+  <b>P3:</b>
+  <%= @registro.p3 %>
+</p>
+
+<p>
+  <b>P4:</b>
+  <%= @registro.p4 %>
+</p>
+
+
+<%= link_to 'Edit', edit_registro_path(@registro) %> |
+<%= link_to 'Back', registros_path %>

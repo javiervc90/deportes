@@ -1,0 +1,33 @@
+<h1>Listing registros</h1>
+
+<table>
+  <tr>
+    <th>Asistencias</th>
+    <th>Creditos</th>
+    <th>P1</th>
+    <th>P2</th>
+    <th>P3</th>
+    <th>P4</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registros.each do |registro| %>
+  <tr>
+    <td><%= registro.asistencias %></td>
+    <td><%= registro.creditos %></td>
+    <td><%= registro.p1 %></td>
+    <td><%= registro.p2 %></td>
+    <td><%= registro.p3 %></td>
+    <td><%= registro.p4 %></td>
+    <td><%= link_to 'Show', registro %></td>
+    <td><%= link_to 'Edit', edit_registro_path(registro) %></td>
+    <td><%= link_to 'Destroy', registro, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Registro', new_registro_path %>

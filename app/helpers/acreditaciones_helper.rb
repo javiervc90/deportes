@@ -1,0 +1,2 @@
+module AcreditacionesHelper
+end
